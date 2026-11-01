@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Radiant Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F1F5FD" />
+      <stop offset="100%" stop-color="#E0E7FF" />
+    </linearGradient>
+
+    <!-- Vibrant Royal Blue to Violet Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8" />
+      <stop offset="45%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadows -->
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3A8A" flood-opacity="0.18" />
+    </filter>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Circular Base Surface -->
+  <circle cx="200" cy="200" r="195" fill="url(#bgGrad)" />
+
+  <!-- Outer Elegant Orbital Rings -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.6" />
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Central Shield / Emblem Background -->
+  <circle cx="200" cy="180" r="120" fill="#FFFFFF" filter="url(#softShadow)" />
+  <circle cx="200" cy="180" r="119" fill="none" stroke="#E2E8F0" stroke-width="1.5" />
+
+  <!-- Decorative Tech Circuit Nodes -->
+  <circle cx="105" cy="180" r="4" fill="#3B82F6" />
+  <line x1="109" y1="180" x2="125" y2="180" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" />
+
+  <circle cx="295" cy="180" r="4" fill="#7C3AED" />
+  <line x1="275" y1="180" x2="291" y2="180" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Monogram Logo: Intertwined "HN" -->
+  <g filter="url(#softShadow)">
+    <!-- Letter H (Left Leg & Crossbar) -->
+    <!-- Left vertical bar -->
+    <rect x="142" y="118" width="16" height="114" rx="8" fill="url(#brandGrad)" />
+    <!-- Crossbar -->
+    <rect x="142" y="167" width="54" height="16" rx="8" fill="url(#brandGrad)" />
+    <!-- Center vertical bar (Shared pillar with H & N) -->
+    <rect x="180" y="118" width="16" height="114" rx="8" fill="url(#brandGrad)" />
+
+    <!-- Letter N (Diagonal & Right Leg) -->
+    <!-- Diagonal stroke -->
+    <path d="M 183 126 L 235 224 A 8 8 0 0 0 249 220 L 249 216 L 197 118 A 8 8 0 0 0 183 126 Z" fill="url(#brandGrad)" />
+    <!-- Right vertical bar -->
+    <rect x="238" y="118" width="16" height="114" rx="8" fill="url(#brandGrad)" />
+
+    <!-- Code Spark Indicator (< / >) -->
+    <circle cx="200" cy="98" r="14" fill="url(#brandGrad)" />
+    <path d="M 196 95 L 193 98 L 196 101 M 204 95 L 207 98 L 204 101" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Typography Banner Below Monogram -->
+  <!-- Name: HAFSA NAEEM -->
+  <text x="200" y="324" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="21" font-weight="800" fill="#0F172A" text-anchor="middle" letter-spacing="3.5">HAFSA NAEEM</text>
+
+  <!-- Subtitle: ASPIRING IT PROFESSIONAL -->
+  <text x="200" y="348" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle" letter-spacing="2.2">ASPIRING IT PROFESSIONAL</text>
+
+  <!-- Elegant Bottom Flourish Accent -->
+  <line x1="165" y1="364" x2="235" y2="364" stroke="url(#ringGrad)" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="200" cy="364" r="3.5" fill="#7C3AED" />
+</svg>

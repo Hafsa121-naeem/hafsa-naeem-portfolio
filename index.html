@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hafsa Naeem — Aspiring IT Professional and Software Candidate. Portfolio showcasing MBA Finance background (2025), HR experience, and frontend skills in HTML, CSS, JavaScript, Git, and GitHub.">
+  <meta name="keywords" content="Hafsa Naeem, Portfolio, Software Developer, Frontend Developer, HTML, CSS, JavaScript, Git, GitHub, MBA Finance, Alhamrah Fabrics">
+  <meta name="author" content="Hafsa Naeem">
+  <meta name="color-scheme" content="light">
+  <title>Hafsa Naeem | Aspiring IT Professional | Software Candidate</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (Modern Resume Light Theme Edition) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       TOP STICKY NAVIGATION BAR (Matching Konstantinos Reference Theme)
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Hafsa Naeem Portfolio Homepage">
+        <div class="brand-icon-box">
+          <span>HN</span>
+        </div>
+        <span class="brand-name">Hafsa Naeem</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#process" class="nav-link">How I Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-action">
+        <a href="#contact" class="btn btn-primary btn-sm" aria-label="Navigate to contact section">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Let's Talk</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION — FIRST IMPRESSION (Matching Reference Layout)
+       ======================================================================== -->
+  <section id="hero" class="hero-section" aria-label="Hero Introduction">
+    <div class="container hero-container">
+      
+      <!-- Left Column: Name, Title, Intro, CTAs & Socials -->
+      <div class="hero-text-col">
+        <h1 class="hero-title">
+          Hi, I’m <span class="gradient-text">Hafsa Naeem</span>
+        </h1>
+        <h2 class="hero-role">Aspiring IT Professional | Software Candidate</h2>
+
+        <p class="hero-intro">
+          “I have an MBA in Finance and a background in Human Resources. I am currently developing my technical skills through an IT course and practical projects. I am looking for an opportunity to learn, grow and gain hands-on experience in the IT field.”
+        </p>
+
+        <!-- Two Primary Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary" aria-label="View featured projects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <span>View My Projects</span>
+          </a>
+
+          <a href="#contact" class="btn btn-outline" aria-label="Navigate to contact section">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <!-- Follow / Connect Row -->
+        <div class="hero-follow-row">
+          <span class="follow-label">Connect:</span>
+
+          <a href="https://github.com/Hafsa121-naeem" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub Profile - @Hafsa121-naeem" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.84 21.523C9.34 21.617 9.52 21.306 9.52 21.042C9.52 20.806 9.51 20.179 9.51 19.349C6.73 19.953 6.14 18.01 6.14 18.01C5.68 16.849 5.03 16.538 5.03 16.538C4.12 15.915 5.1 15.925 5.1 15.925C6.1 15.999 6.63 16.963 6.63 16.963C7.52 18.5 8.97 18.058 9.54 17.804C9.63 17.153 9.89 16.708 10.17 16.458C7.95 16.208 5.62 15.347 5.62 11.517C5.62 10.424 6.01 9.531 6.65 8.831C6.55 8.579 6.21 7.561 6.75 6.195C6.75 6.195 7.59 5.925 9.5 7.218C10.3 6.996 11.15 6.885 12 6.881C12.85 6.885 13.7 6.996 14.5 7.218C16.41 5.925 17.25 6.195 17.25 6.195C17.79 7.561 17.45 8.579 17.35 8.831C17.99 9.531 18.38 10.424 18.38 11.517C18.38 15.358 16.04 16.205 13.81 16.45C14.17 16.761 14.49 17.373 14.49 18.31C14.49 19.658 14.48 20.742 14.48 21.042C14.48 21.309 14.66 21.623 15.17 21.521C19.14 20.193 22 16.444 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+          </a>
+
+          <a href="mailto:Hfsanaeem3@gmail.com?subject=Software%20Opportunity%20Inquiry%20-%20Hafsa%20Naeem" class="social-icon-btn" title="Send Email" aria-label="Send Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+
+          <button type="button" class="social-icon-btn" data-copy-target="Hfsanaeem3@gmail.com" title="Copy Email to Clipboard" aria-label="Copy Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </button>
+
+          <span class="hero-location-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Faisalabad, Pakistan</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Column: Circular Focal Ring with Floating Badges & Single Image Upload Option -->
+      <div class="hero-visual-col">
+        <div class="hero-avatar-frame" id="avatarClickableArea" title="Personal Brand Emblem - Click to upload photo">
+          <div class="avatar-circle-ring" aria-hidden="true"></div>
+
+          <!-- Floating Badges matching Konstantinos Theme -->
+          <div class="floating-badge badge-code" title="Frontend Web Development" aria-hidden="true">
+            <code>&lt;/&gt;</code>
+          </div>
+
+          <div class="floating-badge badge-idea" title="Problem Solving & Rigor" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6m-4 3h2m-5-8.5a6 6 0 1 1 8 0c-.8 1-1.5 2-1.5 3.5h-5c0-1.5-.7-2.5-1.5-3.5z"></path></svg>
+          </div>
+
+          <div class="avatar-circle-inner" id="avatarInnerCircle">
+            <img id="heroAvatarImg" src="images/ui/hafsa-naeem-logo.svg" alt="Hafsa Naeem Personal Brand Logo" class="avatar-graphic-img">
+          </div>
+        </div>
+
+        <!-- Single Upload Image Option -->
+        <div class="avatar-upload-container">
+          <label for="avatarUploadInput" class="avatar-upload-btn" title="Click to upload your photo or custom logo file">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            <span>Upload Image</span>
+          </label>
+          <input type="file" id="avatarUploadInput" accept="image/*" class="sr-only" aria-label="Upload your picture or photo">
+          <button type="button" id="resetAvatarBtn" class="avatar-reset-btn" title="Reset back to default brand logo" style="display: none;">
+            Reset Logo
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 1: ABOUT ME
+         ---------------------------------------------------------------------- -->
+    <section id="about" class="section" aria-label="About Hafsa Naeem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Background &amp; Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">A brief introduction to my academic background, corporate HR experience, and current IT journey.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-grid">
+            <div class="about-text-side">
+              <p class="about-lead-text">
+                My name is Hafsa Naeem. I hold an MBA in Finance (Master of Business Administration, 2025). I have completed three months of corporate experience in the Human Resources Department at Alhamrah Fabrics. I am currently expanding my knowledge through an IT course and learning technical skills including HTML, CSS, JavaScript, Git, and GitHub. I enjoy learning new technologies and applying my knowledge through practical projects. I am looking for an opportunity to grow and gain hands-on experience in the IT field.
+              </p>
+
+              <div class="about-checklist">
+                <div class="about-check-item">
+                  <div class="about-check-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span><strong>Strong Academic Foundation:</strong> MBA in Finance with high academic standing (GPA: 3.6/4.0).</span>
+                </div>
+
+                <div class="about-check-item">
+                  <div class="about-check-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span><strong>Corporate Readiness:</strong> Hands-on HR workplace experience at Alhamrah Fabrics.</span>
+                </div>
+
+                <div class="about-check-item">
+                  <div class="about-check-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </div>
+                  <span><strong>Technical Growth:</strong> Actively learning frontend development (HTML, CSS, JavaScript, Git, GitHub).</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-highlights-panel">
+              <h3 class="highlights-title">Quick Profile Highlights</h3>
+              <div class="highlights-list">
+                <div class="highlight-entry">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-info-title">MBA in Finance</div>
+                    <div class="highlight-info-sub">Master of Business Administration, 2025 (GPA: 3.6/4.0)</div>
+                  </div>
+                </div>
+
+                <div class="highlight-entry">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-info-title">Corporate HR Experience</div>
+                    <div class="highlight-info-sub">Alhamrah Fabrics (3 Months)</div>
+                  </div>
+                </div>
+
+                <div class="highlight-entry">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-info-title">Active Learning</div>
+                    <div class="highlight-info-sub">HTML, CSS, JavaScript, Git, GitHub</div>
+                  </div>
+                </div>
+
+                <div class="highlight-entry">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-info-title">Target Opportunity</div>
+                    <div class="highlight-info-sub">IT / Software Role Candidate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 2: EDUCATION (Actual Verified Qualifications)
+         ---------------------------------------------------------------------- -->
+    <section id="education" class="section" aria-label="Education and Academic Credentials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Academic Credentials</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">Verified academic qualifications in business administration and commerce.</p>
+        </div>
+
+        <div class="education-timeline-wrap">
+          <div class="timeline-spine" aria-hidden="true"></div>
+
+          <div class="timeline-items">
+            <!-- 1. MBA Finance -->
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true">25</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h3 class="degree-title">MBA (Finance)</h3>
+                  <span class="degree-year-badge">2025</span>
+                </div>
+                <div class="degree-institution">Master of Business Administration</div>
+                <div class="degree-gpa-badge">GPA: 3.6 / 4.0</div>
+              </div>
+            </div>
+
+            <!-- 2. M.Com (HRM) -->
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true">22</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h3 class="degree-title">M.Com (HRM)</h3>
+                  <span class="degree-year-badge">2022</span>
+                </div>
+                <div class="degree-institution">Master of Commerce — Human Resource Management</div>
+                <div class="degree-gpa-badge">GPA: 3.4 / 4.0</div>
+              </div>
+            </div>
+
+            <!-- 3. B.Com -->
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true">20</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h3 class="degree-title">B.Com</h3>
+                  <span class="degree-year-badge">2020</span>
+                </div>
+                <div class="degree-institution">Bachelor of Commerce</div>
+              </div>
+            </div>
+
+            <!-- 4. I.Com -->
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true">18</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <h3 class="degree-title">I.Com</h3>
+                  <span class="degree-year-badge">2018</span>
+                </div>
+                <div class="degree-institution">Intermediate in Commerce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 3: EXPERIENCE (Alhamrah Fabrics HR)
+         ---------------------------------------------------------------------- -->
+    <section id="experience" class="section" aria-label="Professional Experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Workplace Experience</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-desc">Professional corporate HR experience completed prior to technical IT transition.</p>
+        </div>
+
+        <div class="experience-wrap">
+          <div class="experience-card">
+            <div class="experience-top-row">
+              <div>
+                <h3 class="exp-org-title">Alhamrah Fabrics</h3>
+                <div class="exp-dept-sub">Human Resources Department &bull; Faisalabad, Pakistan</div>
+              </div>
+              <span class="exp-duration-badge">3 Months Experience</span>
+            </div>
+
+            <div class="exp-body-grid">
+              <div>
+                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-heading); margin-bottom: 12px;">Core Confirmed Responsibilities:</h4>
+                <div class="exp-checklist">
+                  <div class="exp-check-item">
+                    <svg class="exp-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Recruitment Support:</strong> Assisting with hiring workflows and candidate coordination.</span>
+                  </div>
+
+                  <div class="exp-check-item">
+                    <svg class="exp-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Employee Records Management:</strong> Maintaining accurate, confidential personnel files and documentation.</span>
+                  </div>
+
+                  <div class="exp-check-item">
+                    <svg class="exp-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Attendance Management:</strong> Tracking daily attendance records and organizational logs.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-illustration-side">
+                <img src="images/ui/building-modern.svg" alt="Corporate office architecture illustration" style="width: 140px; height: 115px; opacity: 0.9;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 4: SKILLS & TOOLS (Two Clear Groups)
+         ---------------------------------------------------------------------- -->
+    <section id="skills" class="section" aria-label="Skills and Tools">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Core Capabilities</span>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+          <p class="section-desc">Skills currently learning and developing through structured coursework and practice.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Group 1: Technical Skills -->
+          <div class="skills-group-card">
+            <div class="group-card-header">
+              <div class="group-icon-circle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="group-title">Technical Skills</h3>
+                <span class="group-subtitle-note">Currently Learning &amp; Applying</span>
+              </div>
+            </div>
+
+            <div class="tech-badges-grid">
+              <!-- HTML -->
+              <div class="tech-badge-item" title="HTML5">
+                <div class="tech-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 2L5.8 20.2L12 22L18.2 20.2L20 2H4Z" fill="#E44D26"/><path d="M12 3.6V20.2L16.8 18.8L18.3 3.6H12Z" fill="#F16529"/><path d="M12 7.8H8.5L8.7 10.4H12V13H8.9L9.2 16.4L12 17.2V15.2L10.7 14.8L10.6 13.5H12V7.8Z" fill="#EBEBEB"/><path d="M12 7.8H15.5L15.2 10.4H12V7.8ZM12 13H15.1L14.8 16.4L12 17.2V15.2L13.3 14.8L13.4 13.5H12V13Z" fill="#FFFFFF"/></svg>
+                </div>
+                <span class="tech-badge-name">HTML</span>
+              </div>
+
+              <!-- CSS -->
+              <div class="tech-badge-item" title="CSS3">
+                <div class="tech-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 2L5.8 20.2L12 22L18.2 20.2L20 2H4Z" fill="#1572B6"/><path d="M12 3.6V20.2L16.8 18.8L18.3 3.6H12Z" fill="#33A9DC"/><path d="M12 7.8H8.5L8.7 10.4H12V7.8ZM8.9 13H12V10.4H8.7L8.9 13ZM9.2 16.4L12 17.2V15.2L10.7 14.8L10.6 13.5H8.9L9.2 16.4Z" fill="#EBEBEB"/><path d="M12 7.8H15.5L15.2 10.4H12V7.8ZM12 10.4V13H15.1L14.8 16.4L12 17.2V15.2L13.3 14.8L13.4 13.5H15.1L15.2 10.4H12Z" fill="#FFFFFF"/></svg>
+                </div>
+                <span class="tech-badge-name">CSS</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="tech-badge-item" title="JavaScript">
+                <div class="tech-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#F7DF1E"/><path d="M7 17.5C7.8 18.2 9 18.5 10 18C10.8 17.5 10.8 16.2 10.8 15V10H8.8V15C8.8 15.6 8.5 16.2 7.8 16.2C7.3 16.2 7 15.8 7 15.3H5.2C5.2 16.5 6 17.5 7 17.5ZM13.8 17.6C15 18.4 16.8 18.3 17.6 17.4C18.2 16.6 18 15.3 17.2 14.7C16.4 14.2 15.4 13.8 14.8 13.4C14.4 13.1 14.2 12.7 14.4 12.3C14.6 11.8 15.3 11.6 15.8 11.8C16.3 12 16.7 12.5 17 13.1L18.4 12.2C17.8 11.1 16.9 10.3 15.6 10.1C14.3 9.9 13.1 10.5 12.7 11.6C12.3 12.6 12.7 13.7 13.5 14.3C14.3 14.8 15.3 15.2 16 15.6C16.4 15.9 16.6 16.4 16.4 16.9C16.1 17.4 15.2 17.6 14.6 17.3C14 17 13.5 16.3 13.2 15.5L11.8 16.3C12.2 17 12.9 17.6 13.8 17.6Z" fill="#000000"/></svg>
+                </div>
+                <span class="tech-badge-name">JavaScript</span>
+              </div>
+
+              <!-- Git -->
+              <div class="tech-badge-item" title="Git Version Control">
+                <div class="tech-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#F05032"><path d="M2.6 10.59L10.59 2.6a1.996 1.996 0 0 1 2.82 0l7.99 7.99a1.996 1.996 0 0 1 0 2.82l-7.99 7.99a1.996 1.996 0 0 1-2.82 0L2.6 13.41a1.996 1.996 0 0 1 0-2.82zm8.79 6.82a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0-5a1.5 1.5 0 0 0-1.42 1H8.5a.5.5 0 0 1-.5-.5V8.5a1.5 1.5 0 1 0-1 0v4.41c0 .83.67 1.5 1.5 1.5h1.47a1.5 1.5 0 1 0 1.42-2z"/></svg>
+                </div>
+                <span class="tech-badge-name">Git</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="tech-badge-item" title="GitHub">
+                <div class="tech-badge-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.84 21.523C9.34 21.617 9.52 21.306 9.52 21.042C9.52 20.806 9.51 20.179 9.51 19.349C6.73 19.953 6.14 18.01 6.14 18.01C5.68 16.849 5.03 16.538 5.03 16.538C4.12 15.915 5.1 15.925 5.1 15.925C6.1 15.999 6.63 16.963 6.63 16.963C7.52 18.5 8.97 18.058 9.54 17.804C9.63 17.153 9.89 16.708 10.17 16.458C7.95 16.208 5.62 15.347 5.62 11.517C5.62 10.424 6.01 9.531 6.65 8.831C6.55 8.579 6.21 7.561 6.75 6.195C6.75 6.195 7.59 5.925 9.5 7.218C10.3 6.996 11.15 6.885 12 6.881C12.85 6.885 13.7 6.996 14.5 7.218C16.41 5.925 17.25 6.195 17.25 6.195C17.79 7.561 17.45 8.579 17.35 8.831C17.99 9.531 18.38 10.424 18.38 11.517C18.38 15.358 16.04 16.205 13.81 16.45C14.17 16.761 14.49 17.373 14.49 18.31C14.49 19.658 14.48 20.742 14.48 21.042C14.48 21.309 14.66 21.623 15.17 21.521C19.14 20.193 22 16.444 22 12.017C22 6.484 17.522 2 12 2Z" fill="#181717"/></svg>
+                </div>
+                <span class="tech-badge-name">GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Professional Skills -->
+          <div class="skills-group-card">
+            <div class="group-card-header">
+              <div class="group-icon-circle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="group-title">Professional Skills</h3>
+                <span class="group-subtitle-note">Workplace &amp; Collaboration Strengths</span>
+              </div>
+            </div>
+
+            <div class="pro-skills-list">
+              <div class="pro-skill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <span>Communication Skills</span>
+              </div>
+
+              <div class="pro-skill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Time Management</span>
+              </div>
+
+              <div class="pro-skill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Teamwork</span>
+              </div>
+
+              <div class="pro-skill-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 5: FEATURED PROJECT (USB Company Website)
+         ---------------------------------------------------------------------- -->
+    <section id="projects" class="section" aria-label="Featured Practical Project">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Practical Portfolio Work</span>
+          <h2 class="section-title">Featured Project</h2>
+          <p class="section-desc">Multi-section static website project built with instructor guidance to apply frontend fundamentals.</p>
+        </div>
+
+        <div class="project-card-wrap">
+          <div class="project-top-header">
+            <div class="project-title-group">
+              <h3>USB Company Website</h3>
+              <div class="project-tagline">Multi-section practice project developed with instructor guidance</div>
+            </div>
+            <span class="badge-practice">Practice / Learning Project</span>
+          </div>
+
+          <div class="project-content-grid">
+            <!-- Left: Laptop Mockup with Real Screenshot -->
+            <div>
+              <div class="laptop-mockup-frame" aria-hidden="true">
+                <div class="laptop-browser-bar">
+                  <span class="browser-dot dot-red"></span>
+                  <span class="browser-dot dot-yellow"></span>
+                  <span class="browser-dot dot-green"></span>
+                  <span class="browser-url-text">usb-company-website/products</span>
+                </div>
+                <div class="laptop-screen-viewport">
+                  <img src="images/projects/usb/hero-hardware-showcase.jpg" alt="Actual screenshot of USB Company Website practice project">
+                </div>
+              </div>
+              <div class="laptop-deck-base" aria-hidden="true"></div>
+              <div class="project-local-path">
+                <code>C:\Users\Mr Laptop\.gemini\antigravity\scratch\usb-company-website\</code>
+              </div>
+            </div>
+
+            <!-- Right: Project Specifications & Breakdown -->
+            <div>
+              <div class="project-specs-list">
+                <div class="spec-item">
+                  <span class="spec-heading">Purpose &amp; Goal</span>
+                  <p class="spec-description">A multi-section corporate website and product catalog for a USB flash drive supplier showcasing product lines and company information.</p>
+                </div>
+
+                <div class="spec-item">
+                  <span class="spec-heading">Technologies Used</span>
+                  <p class="spec-description"><strong>HTML, CSS, JavaScript</strong> (Built with vanilla web standards without external libraries).</p>
+                </div>
+
+                <div class="spec-item">
+                  <span class="spec-heading">My Contribution</span>
+                  <p class="spec-description">Constructed multi-section pages (Home, About, Products, Contact, and Why Us) using semantic HTML, created responsive layouts with CSS, and implemented client-side JavaScript features under instructor guidance.</p>
+                </div>
+
+                <div class="spec-item">
+                  <span class="spec-heading">What I Learned</span>
+                  <p class="spec-description">Hands-on experience in structuring multi-page web layouts, applying responsive CSS Grid/Flexbox across viewports, handling DOM events in vanilla JavaScript, and organizing project assets.</p>
+                </div>
+              </div>
+
+              <div class="project-actions-row">
+                <a href="https://github.com/Hafsa121-naeem/usb-company" target="_blank" rel="noopener" class="btn btn-primary" aria-label="View USB Company Website repository on GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.84 21.523C9.34 21.617 9.52 21.306 9.52 21.042C9.52 20.806 9.51 20.179 9.51 19.349C6.73 19.953 6.14 18.01 6.14 18.01C5.68 16.849 5.03 16.538 5.03 16.538C4.12 15.915 5.1 15.925 5.1 15.925C6.1 15.999 6.63 16.963 6.63 16.963C7.52 18.5 8.97 18.058 9.54 17.804C9.63 17.153 9.89 16.708 10.17 16.458C7.95 16.208 5.62 15.347 5.62 11.517C5.62 10.424 6.01 9.531 6.65 8.831C6.55 8.579 6.21 7.561 6.75 6.195C6.75 6.195 7.59 5.925 9.5 7.218C10.3 6.996 11.15 6.885 12 6.881C12.85 6.885 13.7 6.996 14.5 7.218C16.41 5.925 17.25 6.195 17.25 6.195C17.79 7.561 17.45 8.579 17.35 8.831C17.99 9.531 18.38 10.424 18.38 11.517C18.38 15.358 16.04 16.205 13.81 16.45C14.17 16.761 14.49 17.373 14.49 18.31C14.49 19.658 14.48 20.742 14.48 21.042C14.48 21.309 14.66 21.623 15.17 21.521C19.14 20.193 22 16.444 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                  <span>View on GitHub &rarr;</span>
+                </a>
+
+                <button type="button" class="btn btn-outline" data-modal-target="projectModal" aria-label="Open screenshot gallery and project specifications">
+                  <span>Inspect Gallery &amp; Specs</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 6: HOW I WORK (5-Step Engineering Workflow)
+         ---------------------------------------------------------------------- -->
+    <section id="process" class="section" aria-label="How I Work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Engineering Process</span>
+          <h2 class="section-title">How I Work</h2>
+          <p class="section-desc">A structured 5-step approach to analyzing requirements, writing code, and delivering reliable software.</p>
+        </div>
+
+        <div class="process-flow-grid">
+          <!-- Step 1 -->
+          <div class="process-step-card">
+            <div class="step-number-badge">1</div>
+            <h3 class="step-card-title">Understand Requirements</h3>
+            <p class="step-card-desc">Carefully review specifications, evaluate user needs, and clarify project constraints before implementation.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card">
+            <div class="step-number-badge">2</div>
+            <h3 class="step-card-title">Plan the Solution</h3>
+            <p class="step-card-desc">Map out information hierarchy, responsive layouts, modular styles, and required JavaScript logic.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card">
+            <div class="step-number-badge">3</div>
+            <h3 class="step-card-title">Build the Project</h3>
+            <p class="step-card-desc">Write clean, semantic HTML5 markup, structured responsive CSS, and accessible client-side code.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card">
+            <div class="step-number-badge">4</div>
+            <h3 class="step-card-title">Test Functionality</h3>
+            <p class="step-card-desc">Audit responsiveness across mobile, tablet, and desktop viewports, verifying all interactions and links.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step-card">
+            <div class="step-number-badge">5</div>
+            <h3 class="step-card-title">Review and Improve</h3>
+            <p class="step-card-desc">Refactor code for clarity, verify accessibility contrast, eliminate errors, and polish visual details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 7: RESPONSIBLE AI USAGE POLICY
+         ---------------------------------------------------------------------- -->
+    <section id="ai-policy" class="section" aria-label="Responsible AI Usage">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Ethics &amp; Transparency</span>
+          <h2 class="section-title">Responsible AI Usage</h2>
+          <p class="section-desc">My professional approach to utilizing modern AI developer tools for learning and development assistance.</p>
+        </div>
+
+        <div class="ai-policy-card">
+          <div class="ai-points-grid">
+            <div class="ai-point-item">
+              <div class="ai-point-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"></path><path d="M12 6v6l4 2"></path></svg>
+                <span>Learning &amp; Guidance</span>
+              </div>
+              <p class="ai-point-desc">I use AI tools for syntax exploration, best-practice guidance, and development assistance throughout my coursework.</p>
+            </div>
+
+            <div class="ai-point-item">
+              <div class="ai-point-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span>Reviewing Suggestions</span>
+              </div>
+              <p class="ai-point-desc">I review all AI-generated suggestions against actual project requirements rather than accepting outputs blindly.</p>
+            </div>
+
+            <div class="ai-point-item">
+              <div class="ai-point-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Understanding Code</span>
+              </div>
+              <p class="ai-point-desc">I make sure I understand the code logic, structure, and behavior thoroughly before incorporating it into my work.</p>
+            </div>
+
+            <div class="ai-point-item">
+              <div class="ai-point-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Personal Ownership</span>
+              </div>
+              <p class="ai-point-desc">I test the final implementation across devices and take full personal responsibility for every design and code decision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         SECTION 8: CONTACT SECTION (Hiring Call to Action)
+         ---------------------------------------------------------------------- -->
+    <section id="contact" class="section" aria-label="Contact Hafsa Naeem">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge-pill">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">Open for entry-level opportunities, career inquiries, and technical collaboration.</p>
+        </div>
+
+        <div class="contact-card-wrap">
+          <p class="contact-statement">
+            I am actively seeking an entry-level <strong>General IT or Software Role</strong> where I can contribute, learn, and grow.
+          </p>
+
+          <div class="contact-options-grid">
+            <a href="mailto:Hfsanaeem3@gmail.com?subject=Software%20Opportunity%20Inquiry%20-%20Hafsa%20Naeem" class="contact-option-box" title="Send email to Hafsa Naeem">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Hfsanaeem3@gmail.com</span>
+            </a>
+
+            <a href="https://github.com/Hafsa121-naeem" target="_blank" rel="noopener" class="contact-option-box" title="View Hafsa's GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.84 21.523C9.34 21.617 9.52 21.306 9.52 21.042C9.52 20.806 9.51 20.179 9.51 19.349C6.73 19.953 6.14 18.01 6.14 18.01C5.68 16.849 5.03 16.538 5.03 16.538C4.12 15.915 5.1 15.925 5.1 15.925C6.1 15.999 6.63 16.963 6.63 16.963C7.52 18.5 8.97 18.058 9.54 17.804C9.63 17.153 9.89 16.708 10.17 16.458C7.95 16.208 5.62 15.347 5.62 11.517C5.62 10.424 6.01 9.531 6.65 8.831C6.55 8.579 6.21 7.561 6.75 6.195C6.75 6.195 7.59 5.925 9.5 7.218C10.3 6.996 11.15 6.885 12 6.881C12.85 6.885 13.7 6.996 14.5 7.218C16.41 5.925 17.25 6.195 17.25 6.195C17.79 7.561 17.45 8.579 17.35 8.831C17.99 9.531 18.38 10.424 18.38 11.517C18.38 15.358 16.04 16.205 13.81 16.45C14.17 16.761 14.49 17.373 14.49 18.31C14.49 19.658 14.48 20.742 14.48 21.042C14.48 21.309 14.66 21.623 15.17 21.521C19.14 20.193 22 16.444 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+              <span>github.com/Hafsa121-naeem</span>
+            </a>
+          </div>
+
+          <div class="contact-actions-row">
+            <a href="mailto:Hfsanaeem3@gmail.com?subject=Software%20Opportunity%20Inquiry%20-%20Hafsa%20Naeem" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Send Direct Email</span>
+            </a>
+
+            <button type="button" class="btn btn-outline" data-copy-target="Hfsanaeem3@gmail.com" aria-label="Copy email address to clipboard">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email Address</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-brand-col">
+        <span class="footer-brand-title">Hafsa Naeem</span>
+        <span class="footer-brand-role">Aspiring IT Professional | Software Candidate</span>
+        <span class="footer-copy-text">&copy; 2026 Hafsa Naeem. All rights reserved.</span>
+      </div>
+
+      <nav class="footer-nav-links" aria-label="Footer Navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">How I Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social-col">
+        <a href="https://github.com/Hafsa121-naeem" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.84 21.523C9.34 21.617 9.52 21.306 9.52 21.042C9.52 20.806 9.51 20.179 9.51 19.349C6.73 19.953 6.14 18.01 6.14 18.01C5.68 16.849 5.03 16.538 5.03 16.538C4.12 15.915 5.1 15.925 5.1 15.925C6.1 15.999 6.63 16.963 6.63 16.963C7.52 18.5 8.97 18.058 9.54 17.804C9.63 17.153 9.89 16.708 10.17 16.458C7.95 16.208 5.62 15.347 5.62 11.517C5.62 10.424 6.01 9.531 6.65 8.831C6.55 8.579 6.21 7.561 6.75 6.195C6.75 6.195 7.59 5.925 9.5 7.218C10.3 6.996 11.15 6.885 12 6.881C12.85 6.885 13.7 6.996 14.5 7.218C16.41 5.925 17.25 6.195 17.25 6.195C17.79 7.561 17.45 8.579 17.35 8.831C17.99 9.531 18.38 10.424 18.38 11.517C18.38 15.358 16.04 16.205 13.81 16.45C14.17 16.761 14.49 17.373 14.49 18.31C14.49 19.658 14.48 20.742 14.48 21.042C14.48 21.309 14.66 21.623 15.17 21.521C19.14 20.193 22 16.444 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+        </a>
+        <a href="mailto:Hfsanaeem3@gmail.com" class="social-icon-btn" title="Send Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: USB COMPANY WEBSITE GALLERY & SPECS
+       ======================================================================== -->
+  <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="projectModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="projectModalTitle">USB Company Website — Project Specs &amp; Gallery</h3>
+        <button type="button" class="modal-close-btn" data-close-modal="projectModal" aria-label="Close modal dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-card); background-color: #0F172A;">
+          <div style="background-color: #1E293B; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; gap: 6px;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background-color: #EF4444;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background-color: #F59E0B;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background-color: #10B981;"></span>
+            </div>
+            <span id="modalBrowserAddress" style="font-family: var(--font-mono); font-size: 0.72rem; color: #94A3B8;">usb-company-website/products</span>
+            <span style="font-size: 0.7rem; color: #60A5FA; font-weight: 600;">HTML &bull; CSS &bull; JavaScript</span>
+          </div>
+          <!-- Preview image -->
+          <img id="modalPreviewImg" src="images/projects/usb/hero-hardware-showcase.jpg" alt="Actual screenshot of USB Company Website preview" style="width: 100%; height: 260px; object-fit: cover;">
+        </div>
+
+        <!-- Thumbnail Switcher -->
+        <div style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px;">
+          <button type="button" class="thumb-btn active" data-img-src="images/projects/usb/hero-hardware-showcase.jpg" data-img-alt="Hero Showcase" data-address="usb-company-website/home" style="border: 2px solid var(--blue-primary); border-radius: 8px; overflow: hidden; width: 72px; height: 50px; flex-shrink: 0; cursor: pointer;">
+            <img src="images/projects/usb/hero-hardware-showcase.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </button>
+          <button type="button" class="thumb-btn" data-img-src="images/projects/usb/facility-hardware.jpg" data-img-alt="Company Overview" data-address="usb-company-website/about" style="border: 2px solid var(--border-card); border-radius: 8px; overflow: hidden; width: 72px; height: 50px; flex-shrink: 0; cursor: pointer;">
+            <img src="images/projects/usb/facility-hardware.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </button>
+          <button type="button" class="thumb-btn" data-img-src="images/projects/usb/laser-engraving-custom.jpg" data-img-alt="Custom Products" data-address="usb-company-website/why-us" style="border: 2px solid var(--border-card); border-radius: 8px; overflow: hidden; width: 72px; height: 50px; flex-shrink: 0; cursor: pointer;">
+            <img src="images/projects/usb/laser-engraving-custom.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </button>
+          <button type="button" class="thumb-btn" data-img-src="images/projects/usb/hero/hero-showcase.png" data-img-alt="Hardware Catalog" data-address="usb-company-website/products" style="border: 2px solid var(--border-card); border-radius: 8px; overflow: hidden; width: 72px; height: 50px; flex-shrink: 0; cursor: pointer;">
+            <img src="images/projects/usb/hero/hero-showcase.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+          </button>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-heading); margin-bottom: 6px;">Project Scope &amp; Learning Experience</h4>
+          <p style="font-size: 0.92rem; line-height: 1.65; color: var(--text-body);">
+            USB Company Website is a multi-section practice project developed under instructor guidance. It demonstrates foundational frontend skills by presenting a structured website and catalog for a USB supplier across multiple connected pages.
+          </p>
+        </div>
+
+        <div style="background-color: var(--blue-soft-surface); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--blue-border-light);">
+          <h5 style="font-size: 0.88rem; font-weight: 800; color: var(--text-heading); margin-bottom: 8px;">Verified Project Summary:</h5>
+          <ul style="font-size: 0.86rem; line-height: 1.7; color: var(--text-body); list-style: disc; margin-left: 18px;">
+            <li><strong>Core Technologies:</strong> HTML, CSS, JavaScript.</li>
+            <li><strong>Page Structure:</strong> Multi-section pages including Home, About, Products, Contact, and Why Us.</li>
+            <li><strong>Learning Environment:</strong> Developed as a hands-on practice project with instructor guidance.</li>
+            <li><strong>Local Project Directory:</strong> <code>C:\Users\Mr Laptop\.gemini\antigravity\scratch\usb-company-website\</code></li>
+            <li><strong>GitHub Repository:</strong> <code>https://github.com/Hafsa121-naeem/usb-company</code></li>
+          </ul>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 10px; padding-top: 14px; border-top: 1px solid var(--border-card); flex-wrap: wrap;">
+          <a href="https://github.com/Hafsa121-naeem/usb-company" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+            <span>View GitHub Repository &rarr;</span>
+          </a>
+          <a href="mailto:Hfsanaeem3@gmail.com?subject=USB%20Company%20Website%20Inquiry%20-%20Hafsa%20Naeem" class="btn btn-primary btn-sm">
+            <span>Contact Regarding This Project &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       TOAST NOTIFICATION (Email Copied Feedback)
+       ======================================================================== -->
+  <div id="copyToast" class="toast-notification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span class="toast-text">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

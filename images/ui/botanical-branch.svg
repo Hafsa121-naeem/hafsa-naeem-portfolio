@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 360" fill="none">
+  <!-- Main delicate curved stem -->
+  <path d="M160 350 C 130 270, 70 180, 110 30" stroke="#7C3AED" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  
+  <!-- Side stem branches & leaves -->
+  <path d="M142 300 C 110 310, 80 295, 75 270 C 95 260, 130 280, 142 300 Z" fill="#8B5CF6" opacity="0.75"/>
+  <path d="M142 300 C 170 310, 195 290, 190 265 C 165 260, 145 285, 142 300 Z" fill="#A78BFA" opacity="0.6"/>
+
+  <path d="M125 240 C 90 245, 65 225, 60 200 C 85 195, 115 220, 125 240 Z" fill="#7C3AED" opacity="0.8"/>
+  <path d="M125 240 C 155 245, 180 220, 175 195 C 150 190, 130 220, 125 240 Z" fill="#9333EA" opacity="0.7"/>
+
+  <path d="M108 175 C 75 170, 50 145, 52 120 C 78 120, 100 150, 108 175 Z" fill="#8B5CF6" opacity="0.85"/>
+  <path d="M108 175 C 135 170, 160 140, 155 115 C 130 115, 112 150, 108 175 Z" fill="#A78BFA" opacity="0.65"/>
+
+  <path d="M98 115 C 70 105, 55 80, 60 55 C 82 60, 95 90, 98 115 Z" fill="#7C3AED" opacity="0.85"/>
+  <path d="M98 115 C 122 105, 140 75, 135 50 C 112 55, 100 90, 98 115 Z" fill="#9333EA" opacity="0.75"/>
+
+  <!-- Top terminal leaf -->
+  <path d="M110 30 C 105 10, 120 0, 125 5 C 130 15, 120 30, 110 30 Z" fill="#6D28D9" opacity="0.9"/>
+</svg>
